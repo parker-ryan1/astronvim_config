@@ -3,7 +3,8 @@ local config = wezterm.config_builder()
 
 -- Default to WSL Ubuntu
 config.default_domain = 'WSL:Ubuntu'
--- Fallback if domain fails: config.default_prog = { 'wsl.exe', '-d', 'Ubuntu' }
+config.default_cwd = '~'
+-- Fallback if domain fails: config.default_prog = { 'wsl.exe', '~', '-d', 'Ubuntu' }
 
 -- Font
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
