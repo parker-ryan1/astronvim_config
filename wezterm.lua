@@ -1,10 +1,8 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
--- Default to WSL Ubuntu
-config.default_domain = 'WSL:Ubuntu'
-config.default_cwd = '/mnt/c/Users/parke'
--- Fallback if domain fails: config.default_prog = { 'wsl.exe', '~', '-d', 'Ubuntu' }
+-- Default to WSL Ubuntu opening in user profile
+config.default_prog = { 'wsl.exe', '--cd', '/mnt/c/Users/parke', '-d', 'Ubuntu' }
 
 -- Font
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
