@@ -12,6 +12,12 @@ config.font_size = 11.5
 
 -- Appearance: Theme, Transparency, Blur
 config.color_scheme = 'Tokyo Night'
+config.window_background_image = 'C:/Users/parke/wezterm_bg.jpg'
+config.window_background_image_hsb = {
+  brightness = 0.2, -- Darken for text readability
+  hue = 1.0,
+  saturation = 1.0,
+}
 config.window_background_opacity = 0.85
 config.win32_system_backdrop = 'Acrylic' -- Windows specific blur
 
